@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12A8AEE2318B3980049B6E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8AED2318B3980049B6E0 /* AppDelegate.swift */; };
+		A12A8AF02318B3980049B6E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8AEF2318B3980049B6E0 /* ViewController.swift */; };
+		A12A8AF32318B3980049B6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12A8AF12318B3980049B6E0 /* Main.storyboard */; };
+		A12A8AF52318B39A0049B6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12A8AF42318B39A0049B6E0 /* Assets.xcassets */; };
+		A12A8AF82318B39A0049B6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12A8AF62318B39A0049B6E0 /* LaunchScreen.storyboard */; };
+		A12A8B002318B8840049B6E0 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8AFF2318B8840049B6E0 /* LocationTableViewController.swift */; };
+		A12A8B022318B8EE0049B6E0 /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B012318B8EE0049B6E0 /* NewLocationViewController.swift */; };
+		A12A8B042318B93D0049B6E0 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B032318B93D0049B6E0 /* LocationAnnotation.swift */; };
+		A12A8B06231A82480049B6E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B05231A82480049B6E0 /* MapViewController.swift */; };
+		A12A8B0D231C9CFB0049B6E0 /* SitesInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B0B231C9CFB0049B6E0 /* SitesInfo.xcdatamodeld */; };
+		A12A8B14231CA80F0049B6E0 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B13231CA80F0049B6E0 /* DatabaseProtocol.swift */; };
+		A12A8B16231CAA530049B6E0 /* CoreDataControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B15231CAA530049B6E0 /* CoreDataControllerController.swift */; };
+		A12A8B18231CAC3C0049B6E0 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B17231CAC3C0049B6E0 /* MulticastDelegate.swift */; };
+		A12A8B1A231FE00C0049B6E0 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B19231FE00C0049B6E0 /* ImageCollectionViewCell.swift */; };
+		A12A8B1C231FE0310049B6E0 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B1B231FE0310049B6E0 /* GalleryCollectionViewController.swift */; };
+		A12A8B1E231FE0680049B6E0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B1D231FE0680049B6E0 /* CameraViewController.swift */; };
+		A12A8B212320813D0049B6E0 /* SiteInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B1F2320813D0049B6E0 /* SiteInfo+CoreDataClass.swift */; };
+		A12A8B222320813D0049B6E0 /* SiteInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B202320813D0049B6E0 /* SiteInfo+CoreDataProperties.swift */; };
+		A12A8B262321655C0049B6E0 /* SiteDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A8B252321655C0049B6E0 /* SiteDetailInfoViewController.swift */; };
+		A12A8B572321F7CC0049B6E0 /* Old Melbourne Gaol.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B482321F7CC0049B6E0 /* Old Melbourne Gaol.gpx */; };
+		A12A8B582321F7CC0049B6E0 /* Parliament Gardens.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B492321F7CC0049B6E0 /* Parliament Gardens.gpx */; };
+		A12A8B592321F7CC0049B6E0 /* NGV International.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B4A2321F7CC0049B6E0 /* NGV International.gpx */; };
+		A12A8B5A2321F7CC0049B6E0 /* Federation Square.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B4B2321F7CC0049B6E0 /* Federation Square.gpx */; };
+		A12A8B5B2321F7CC0049B6E0 /* Flagstaff Gardens.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B4C2321F7CC0049B6E0 /* Flagstaff Gardens.gpx */; };
+		A12A8B5C2321F7CC0049B6E0 /* State Library.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B4D2321F7CC0049B6E0 /* State Library.gpx */; };
+		A12A8B5D2321F7CC0049B6E0 /* Immigration Museum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B4E2321F7CC0049B6E0 /* Immigration Museum.gpx */; };
+		A12A8B5E2321F7CC0049B6E0 /* Flinders Street Station.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B4F2321F7CC0049B6E0 /* Flinders Street Station.gpx */; };
+		A12A8B5F2321F7CC0049B6E0 /* Melbourne Museum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B502321F7CC0049B6E0 /* Melbourne Museum.gpx */; };
+		A12A8B602321F7CC0049B6E0 /* Chinese Museum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B512321F7CC0049B6E0 /* Chinese Museum.gpx */; };
+		A12A8B612321F7CC0049B6E0 /* Queen Victoria Market.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B522321F7CC0049B6E0 /* Queen Victoria Market.gpx */; };
+		A12A8B622321F7CC0049B6E0 /* St Paul's Cathedral.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B532321F7CC0049B6E0 /* St Paul's Cathedral.gpx */; };
+		A12A8B632321F7CC0049B6E0 /* Law Library of Victoria.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B542321F7CC0049B6E0 /* Law Library of Victoria.gpx */; };
+		A12A8B642321F7CC0049B6E0 /* City Library.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B552321F7CC0049B6E0 /* City Library.gpx */; };
+		A12A8B652321F7CC0049B6E0 /* The Scots' Church.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A12A8B562321F7CC0049B6E0 /* The Scots' Church.gpx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A12A8AEA2318B3980049B6E0 /* AssignmentVersionOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentVersionOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12A8AED2318B3980049B6E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A12A8AEF2318B3980049B6E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A12A8AF22318B3980049B6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A12A8AF42318B39A0049B6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A12A8AF72318B39A0049B6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A12A8AF92318B39A0049B6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12A8AFF2318B8840049B6E0 /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		A12A8B012318B8EE0049B6E0 /* NewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
+		A12A8B032318B93D0049B6E0 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		A12A8B05231A82480049B6E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A12A8B0C231C9CFB0049B6E0 /* SitesInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitesInfo.xcdatamodel; sourceTree = "<group>"; };
+		A12A8B13231CA80F0049B6E0 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		A12A8B15231CAA530049B6E0 /* CoreDataControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataControllerController.swift; sourceTree = "<group>"; };
+		A12A8B17231CAC3C0049B6E0 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		A12A8B19231FE00C0049B6E0 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		A12A8B1B231FE0310049B6E0 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		A12A8B1D231FE0680049B6E0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A12A8B1F2320813D0049B6E0 /* SiteInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SiteInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A12A8B202320813D0049B6E0 /* SiteInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SiteInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A12A8B252321655C0049B6E0 /* SiteDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteDetailInfoViewController.swift; sourceTree = "<group>"; };
+		A12A8B482321F7CC0049B6E0 /* Old Melbourne Gaol.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Old Melbourne Gaol.gpx"; path = "../../../iospics/Old Melbourne Gaol.gpx"; sourceTree = "<group>"; };
+		A12A8B492321F7CC0049B6E0 /* Parliament Gardens.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Parliament Gardens.gpx"; path = "../../../iospics/Parliament Gardens.gpx"; sourceTree = "<group>"; };
+		A12A8B4A2321F7CC0049B6E0 /* NGV International.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "NGV International.gpx"; path = "../../../iospics/NGV International.gpx"; sourceTree = "<group>"; };
+		A12A8B4B2321F7CC0049B6E0 /* Federation Square.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Federation Square.gpx"; path = "../../../iospics/Federation Square.gpx"; sourceTree = "<group>"; };
+		A12A8B4C2321F7CC0049B6E0 /* Flagstaff Gardens.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Flagstaff Gardens.gpx"; path = "../../../iospics/Flagstaff Gardens.gpx"; sourceTree = "<group>"; };
+		A12A8B4D2321F7CC0049B6E0 /* State Library.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "State Library.gpx"; path = "../../../iospics/State Library.gpx"; sourceTree = "<group>"; };
+		A12A8B4E2321F7CC0049B6E0 /* Immigration Museum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Immigration Museum.gpx"; path = "../../../iospics/Immigration Museum.gpx"; sourceTree = "<group>"; };
+		A12A8B4F2321F7CC0049B6E0 /* Flinders Street Station.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Flinders Street Station.gpx"; path = "../../../iospics/Flinders Street Station.gpx"; sourceTree = "<group>"; };
+		A12A8B502321F7CC0049B6E0 /* Melbourne Museum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Melbourne Museum.gpx"; path = "../../../iospics/Melbourne Museum.gpx"; sourceTree = "<group>"; };
+		A12A8B512321F7CC0049B6E0 /* Chinese Museum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Chinese Museum.gpx"; path = "../../../iospics/Chinese Museum.gpx"; sourceTree = "<group>"; };
+		A12A8B522321F7CC0049B6E0 /* Queen Victoria Market.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Queen Victoria Market.gpx"; path = "../../../iospics/Queen Victoria Market.gpx"; sourceTree = "<group>"; };
+		A12A8B532321F7CC0049B6E0 /* St Paul's Cathedral.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "St Paul's Cathedral.gpx"; path = "../../../iospics/St Paul's Cathedral.gpx"; sourceTree = "<group>"; };
+		A12A8B542321F7CC0049B6E0 /* Law Library of Victoria.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Law Library of Victoria.gpx"; path = "../../../iospics/Law Library of Victoria.gpx"; sourceTree = "<group>"; };
+		A12A8B552321F7CC0049B6E0 /* City Library.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "City Library.gpx"; path = "../../../iospics/City Library.gpx"; sourceTree = "<group>"; };
+		A12A8B562321F7CC0049B6E0 /* The Scots' Church.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "The Scots' Church.gpx"; path = "../../../iospics/The Scots' Church.gpx"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12A8AE72318B3980049B6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12A8AE12318B3970049B6E0 = {
+			isa = PBXGroup;
+			children = (
+				A12A8AEC2318B3980049B6E0 /* AssignmentVersionOne */,
+				A12A8AEB2318B3980049B6E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A12A8AEB2318B3980049B6E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A12A8AEA2318B3980049B6E0 /* AssignmentVersionOne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12A8AEC2318B3980049B6E0 /* AssignmentVersionOne */ = {
+			isa = PBXGroup;
+			children = (
+				A12A8B272321E1150049B6E0 /* gpx */,
+				A12A8B12231CA7E00049B6E0 /* Database */,
+				A12A8B0A231C9BD70049B6E0 /* DataModel */,
+				A12A8AED2318B3980049B6E0 /* AppDelegate.swift */,
+				A12A8AEF2318B3980049B6E0 /* ViewController.swift */,
+				A12A8AF12318B3980049B6E0 /* Main.storyboard */,
+				A12A8AF42318B39A0049B6E0 /* Assets.xcassets */,
+				A12A8AF62318B39A0049B6E0 /* LaunchScreen.storyboard */,
+				A12A8AF92318B39A0049B6E0 /* Info.plist */,
+				A12A8AFF2318B8840049B6E0 /* LocationTableViewController.swift */,
+				A12A8B012318B8EE0049B6E0 /* NewLocationViewController.swift */,
+				A12A8B032318B93D0049B6E0 /* LocationAnnotation.swift */,
+				A12A8B05231A82480049B6E0 /* MapViewController.swift */,
+				A12A8B19231FE00C0049B6E0 /* ImageCollectionViewCell.swift */,
+				A12A8B1B231FE0310049B6E0 /* GalleryCollectionViewController.swift */,
+				A12A8B1D231FE0680049B6E0 /* CameraViewController.swift */,
+				A12A8B252321655C0049B6E0 /* SiteDetailInfoViewController.swift */,
+			);
+			path = AssignmentVersionOne;
+			sourceTree = "<group>";
+		};
+		A12A8B0A231C9BD70049B6E0 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A12A8B1F2320813D0049B6E0 /* SiteInfo+CoreDataClass.swift */,
+				A12A8B202320813D0049B6E0 /* SiteInfo+CoreDataProperties.swift */,
+				A12A8B0B231C9CFB0049B6E0 /* SitesInfo.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A12A8B12231CA7E00049B6E0 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A12A8B13231CA80F0049B6E0 /* DatabaseProtocol.swift */,
+				A12A8B15231CAA530049B6E0 /* CoreDataControllerController.swift */,
+				A12A8B17231CAC3C0049B6E0 /* MulticastDelegate.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A12A8B272321E1150049B6E0 /* gpx */ = {
+			isa = PBXGroup;
+			children = (
+				A12A8B512321F7CC0049B6E0 /* Chinese Museum.gpx */,
+				A12A8B552321F7CC0049B6E0 /* City Library.gpx */,
+				A12A8B4B2321F7CC0049B6E0 /* Federation Square.gpx */,
+				A12A8B4C2321F7CC0049B6E0 /* Flagstaff Gardens.gpx */,
+				A12A8B4F2321F7CC0049B6E0 /* Flinders Street Station.gpx */,
+				A12A8B4E2321F7CC0049B6E0 /* Immigration Museum.gpx */,
+				A12A8B542321F7CC0049B6E0 /* Law Library of Victoria.gpx */,
+				A12A8B502321F7CC0049B6E0 /* Melbourne Museum.gpx */,
+				A12A8B4A2321F7CC0049B6E0 /* NGV International.gpx */,
+				A12A8B482321F7CC0049B6E0 /* Old Melbourne Gaol.gpx */,
+				A12A8B492321F7CC0049B6E0 /* Parliament Gardens.gpx */,
+				A12A8B522321F7CC0049B6E0 /* Queen Victoria Market.gpx */,
+				A12A8B532321F7CC0049B6E0 /* St Paul's Cathedral.gpx */,
+				A12A8B4D2321F7CC0049B6E0 /* State Library.gpx */,
+				A12A8B562321F7CC0049B6E0 /* The Scots' Church.gpx */,
+			);
+			path = gpx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A12A8AE92318B3980049B6E0 /* AssignmentVersionOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12A8AFC2318B39A0049B6E0 /* Build configuration list for PBXNativeTarget "AssignmentVersionOne" */;
+			buildPhases = (
+				A12A8AE62318B3980049B6E0 /* Sources */,
+				A12A8AE72318B3980049B6E0 /* Frameworks */,
+				A12A8AE82318B3980049B6E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssignmentVersionOne;
+			productName = AssignmentVersionOne;
+			productReference = A12A8AEA2318B3980049B6E0 /* AssignmentVersionOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12A8AE22318B3970049B6E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = XinzhuoYu;
+				TargetAttributes = {
+					A12A8AE92318B3980049B6E0 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = A12A8AE52318B3980049B6E0 /* Build configuration list for PBXProject "AssignmentVersionOne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A12A8AE12318B3970049B6E0;
+			productRefGroup = A12A8AEB2318B3980049B6E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12A8AE92318B3980049B6E0 /* AssignmentVersionOne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A12A8AE82318B3980049B6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12A8AF82318B39A0049B6E0 /* LaunchScreen.storyboard in Resources */,
+				A12A8B5D2321F7CC0049B6E0 /* Immigration Museum.gpx in Resources */,
+				A12A8B592321F7CC0049B6E0 /* NGV International.gpx in Resources */,
+				A12A8AF52318B39A0049B6E0 /* Assets.xcassets in Resources */,
+				A12A8B572321F7CC0049B6E0 /* Old Melbourne Gaol.gpx in Resources */,
+				A12A8B622321F7CC0049B6E0 /* St Paul's Cathedral.gpx in Resources */,
+				A12A8B5B2321F7CC0049B6E0 /* Flagstaff Gardens.gpx in Resources */,
+				A12A8B642321F7CC0049B6E0 /* City Library.gpx in Resources */,
+				A12A8B632321F7CC0049B6E0 /* Law Library of Victoria.gpx in Resources */,
+				A12A8B652321F7CC0049B6E0 /* The Scots' Church.gpx in Resources */,
+				A12A8B602321F7CC0049B6E0 /* Chinese Museum.gpx in Resources */,
+				A12A8B612321F7CC0049B6E0 /* Queen Victoria Market.gpx in Resources */,
+				A12A8B5F2321F7CC0049B6E0 /* Melbourne Museum.gpx in Resources */,
+				A12A8B5C2321F7CC0049B6E0 /* State Library.gpx in Resources */,
+				A12A8AF32318B3980049B6E0 /* Main.storyboard in Resources */,
+				A12A8B582321F7CC0049B6E0 /* Parliament Gardens.gpx in Resources */,
+				A12A8B5E2321F7CC0049B6E0 /* Flinders Street Station.gpx in Resources */,
+				A12A8B5A2321F7CC0049B6E0 /* Federation Square.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A12A8AE62318B3980049B6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12A8B262321655C0049B6E0 /* SiteDetailInfoViewController.swift in Sources */,
+				A12A8B022318B8EE0049B6E0 /* NewLocationViewController.swift in Sources */,
+				A12A8B06231A82480049B6E0 /* MapViewController.swift in Sources */,
+				A12A8B1A231FE00C0049B6E0 /* ImageCollectionViewCell.swift in Sources */,
+				A12A8B16231CAA530049B6E0 /* CoreDataControllerController.swift in Sources */,
+				A12A8B1C231FE0310049B6E0 /* GalleryCollectionViewController.swift in Sources */,
+				A12A8B0D231C9CFB0049B6E0 /* SitesInfo.xcdatamodeld in Sources */,
+				A12A8B14231CA80F0049B6E0 /* DatabaseProtocol.swift in Sources */,
+				A12A8AF02318B3980049B6E0 /* ViewController.swift in Sources */,
+				A12A8B212320813D0049B6E0 /* SiteInfo+CoreDataClass.swift in Sources */,
+				A12A8AEE2318B3980049B6E0 /* AppDelegate.swift in Sources */,
+				A12A8B1E231FE0680049B6E0 /* CameraViewController.swift in Sources */,
+				A12A8B222320813D0049B6E0 /* SiteInfo+CoreDataProperties.swift in Sources */,
+				A12A8B002318B8840049B6E0 /* LocationTableViewController.swift in Sources */,
+				A12A8B042318B93D0049B6E0 /* LocationAnnotation.swift in Sources */,
+				A12A8B18231CAC3C0049B6E0 /* MulticastDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A12A8AF12318B3980049B6E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12A8AF22318B3980049B6E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A12A8AF62318B39A0049B6E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12A8AF72318B39A0049B6E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12A8AFA2318B39A0049B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A12A8AFB2318B39A0049B6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12A8AFD2318B39A0049B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6465KAAF2V;
+				INFOPLIST_FILE = AssignmentVersionOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FIT.AssignmentVersionOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A12A8AFE2318B39A0049B6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6465KAAF2V;
+				INFOPLIST_FILE = AssignmentVersionOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FIT.AssignmentVersionOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A12A8AE52318B3980049B6E0 /* Build configuration list for PBXProject "AssignmentVersionOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12A8AFA2318B39A0049B6E0 /* Debug */,
+				A12A8AFB2318B39A0049B6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12A8AFC2318B39A0049B6E0 /* Build configuration list for PBXNativeTarget "AssignmentVersionOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12A8AFD2318B39A0049B6E0 /* Debug */,
+				A12A8AFE2318B39A0049B6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A12A8B0B231C9CFB0049B6E0 /* SitesInfo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A12A8B0C231C9CFB0049B6E0 /* SitesInfo.xcdatamodel */,
+			);
+			currentVersion = A12A8B0C231C9CFB0049B6E0 /* SitesInfo.xcdatamodel */;
+			path = SitesInfo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A12A8AE22318B3970049B6E0 /* Project object */;
+}
